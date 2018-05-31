@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/brandy",
+      "handler": "Brandy.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/brandy/:_id",
+      "handler": "Brandy.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/brandy",
+      "handler": "Brandy.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/brandy/:_id",
+      "handler": "Brandy.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/brandy/:_id",
+      "handler": "Brandy.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -72,6 +72,7 @@ exports.connect = (provider, query) => {
 
         // Retrieve role `public`.
         const publicRole = await strapi.query('role', 'users-permissions').findOne({ type: 'public' }, []);
+        console.log(publicRole)
 
         // Create the new user.
         const params = _.assign(profile, {

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "brandy",
+  "info": {
+    "name": "brandy",
+    "description": "Just your standard brandy"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "pageName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "world": {
+      "type": "text"
+    },
+    "template": {
+      "default": "brandy",
+      "type": "string",
+      "required": true
+    }
+  }
+}

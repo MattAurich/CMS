@@ -1,1 +1,21 @@
-{}
+{
+  "brandy": {
+    "attributes": {
+      "Title": {
+        "appearance": ""
+      },
+      "Core": {
+        "appearance": "WYSIWYG"
+      },
+      "world": {
+        "appearance": "WYSIWYG"
+      },
+      "hi": {
+        "appearance": ""
+      },
+      "template": {
+        "appearance": ""
+      }
+    }
+  }
+}
