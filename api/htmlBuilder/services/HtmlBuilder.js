@@ -8,10 +8,8 @@ const request = require('request');
 
 module.exports = {
   buildPage: async (data) => {
-    strapi.log.info('here it is!!!!', data);
-
     var clientServerOptions = {
-      uri: 'http://localhost:3000/build/' + data.template,
+      uri: strapi.config.htmlBuilder.endpoint + data.template,
       body: JSON.stringify({
         destDir: data.pageName,
         context: data,
@@ -19,6 +17,10 @@ module.exports = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
+      },
+      'auth': {
+        'user': strapi.config.htmlBuilder.user,
+        'pass': strapi.config.htmlBuilder.pass,
       },
       timeout: 120000,
     };

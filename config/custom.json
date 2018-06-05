@@ -1,3 +1,7 @@
 {
-  "myCustomConfiguration": "This configuration is accessible through strapi.config.myCustomConfiguration"
+  "htmlBuilder": {
+    "endpoint": "${process.env.HTMLBUILDER_ENDPOINT || ''}",
+    "user": "${process.env.HTMLBUILDER_USER || ''}",
+    "pass": "${process.env.HTMLBUILDER_PASS || ''}"
+  }
 }
