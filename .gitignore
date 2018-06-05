@@ -4,6 +4,7 @@
 
 admin/admin/src/config/manifest.json
 admin/admin/build
+plugins/*/admin/build
 
 ############################
 # OS X
