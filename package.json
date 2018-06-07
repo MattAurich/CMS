@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "lodash": "4.x.x",
+    "pm2": "^2.10.4",
     "request": "^2.87.0",
     "strapi": "3.0.0-alpha.12.2",
     "strapi-mongoose": "3.0.0-alpha.12.2"
